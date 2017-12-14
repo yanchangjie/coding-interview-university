@@ -1,35 +1,3 @@
-# [译] Google Interview University 一套完整的学习手册帮助自己准备 Google 的面试
-
-> * 原文地址：[Google Interview University](https://github.com/jwasham/google-interview-university)
-* 原文作者：[John Washam](https://github.com/jwasham)
-* 译文出自：[掘金翻译计划](https://github.com/xitu/gold-miner)
-* 译者：[aleen42](https://github.com/aleen42)，[Newton](https://github.com/Newt0n)，[bobmayuze](https://github.com/bobmayuze)，[Jaeger](https://github.com/laobie)，[sqrthree](https://github.com/sqrthree)
-
-[![xitu](https://camo.githubusercontent.com/c9c9db0a39b56738a62332f0791d58b1522fdf82/68747470733a2f2f7261776769742e636f6d2f616c65656e34322f6261646765732f6d61737465722f7372632f786974752e737667)](https://github.com/xitu/gold-miner)
-
-## 这是？
-
-这是我为了从 web 开发者（自学、非计算机科学学位）蜕变至 Google 软件工程师所制定的计划，其内容历时数月。
-
-![白板上编程 ———— 来自 HBO 频道的剧集，“硅谷”](https://dng5l3qzreal6.cloudfront.net/2016/Aug/coding_board_small-1470866369118.jpg)
-
-这一长列表是从 **Google 的指导笔记** 中萃取出来并进行扩展。因此，有些事情你必须去了解一下。我在列表的底部添加了一些额外项，用于解决面试中可能会出现的问题。这些额外项大部分是来自于 Steve Yegge 的“[得到在 Google 工作的机会](http://steve-yegge.blogspot.com/2008/03/get-that-job-at-google.html)”。而在 Google 指导笔记的逐字间，它们有时也会被反映出来。
-
----
-
-## 目录
-
-- [这是？](#这是)
-- [为何要用到它？](#为何要用到它)
-- [如何使用它](#如何使用它)
-- [拥有一名 Googler 的心态](#拥有一名-googler-的心态)
-- [我得到了工作吗？](#我得到了工作吗)
-- [跟着我的脚步](#跟着我的脚步)
-- [不要妄自菲薄](#不要妄自菲薄)
-- [关于 Google](#关于-google)
-- [相关视频资源](#相关视频资源)
-- [面试过程 & 通用的面试准备](#面试过程--通用的面试准备)
-- [为你的面试选择一种语言](#为你的面试选择一种语言)
 - [在你开始之前](#在你开始之前)
 - [你所看不到的](#你所看不到的)
 - [日常计划](#日常计划)
@@ -66,14 +34,7 @@
     - [调度](#调度)
     - [实现系统例程](#实现系统例程)
     - [字符串搜索和操作](#字符串搜索和操作)
-- [终面](#终面)
-- [书籍](#书籍)
-- [编码练习和挑战](#编码练习和挑战)
-- [当你临近面试时](#当你临近面试时)
-- [你的简历](#你的简历)
-- [当面试来临的时候](#当面试来临的时候)
-- [问面试官的问题](#问面试官的问题)
-- [当你获得了梦想的职位](#当你获得了梦想的职位)
+
 
 ---------------- 下面的内容是可选的 ----------------
 
@@ -113,56 +74,6 @@
 
 ---
 
-## 为何要用到它？
-
-我一直都是遵循该计划去准备 Google 的面试。自 1997 年以来，我一直从事于 web 程序的构建、服务器的构建及创业型公司的创办。对于只有着一个经济学学位，而不是计算机科学学位（CS degree）的我来说，在职业生涯中所取得的都非常成功。然而，我想在 Google 工作，并进入大型系统中，真正地去理解计算机系统、算法效率、数据结构性能、低级别编程语言及其工作原理。可一项都不了解的我，怎么会被 Google 所应聘呢？
-
-当我创建该项目时，我从一个堆栈到一个堆都不了解。那时的我，完全不了解 Big-O 、树，或如何去遍历一个图。如果非要我去编写一个排序算法的话，我只能说我所写的肯定是很糟糕。一直以来，我所用的任何数据结构都是内建于编程语言当中。至于它们在背后是如何运作，对此我一概不清楚。此外，以前的我并不需要对内存进行管理，最多就只是在一个正在执行的进程抛出了“内存不足”的错误后，采取一些权变措施。而在我的编程生活中，也甚少使用到多维数组，可关联数组却成千上万。而且，从一开始到现在，我都还未曾自己实现过数据结构。
-
-就是这样的我，在经过该学习计划后，已然对被 Google 所雇佣充满信心。这是一个漫长的计划，以至于花费了我数月的时间。若您早已熟悉大部分的知识，那么也许能节省大量的时间。
-
-## 如何使用它
-
-下面所有的东西都只是一个概述。因此，你需要由上而下逐一地去处理它。
-
-在学习过程中，我是使用 GitHub 特殊的语法特性 markdown flavor 去检查计划的进展，包括使用任务列表。
-
-- [x] 创建一个新的分支，以使得你可以像这样去检查计划的进展。直接往方括号中填写一个字符 x 即可：[x]
-
-[更多关于 Github-flavored markdown 的详情](https://guides.github.com/features/mastering-markdown/#GitHub-flavored-markdown)
-
-## 拥有一名 Googler 的心态
-
-把一个（或两个）印有“[future Googler](https://github.com/jwasham/google-interview-university/blob/master/extras/future-googler.pdf)”的图案打印出来，并用你誓要成功的眼神盯着它。
-
-[![future Googler sign](https://dng5l3qzreal6.cloudfront.net/2016/Oct/Screen_Shot_2016_10_04_at_10_13_24_AM-1475601104364.png)](https://github.com/jwasham/google-interview-university/blob/master/extras/future-googler.pdf)
-
-## 我得到了工作吗？
-
-我还没去应聘。
-
-因为我离完成学习（完成该疯狂的计划列表）还需要数天的时间，并打算在下周开始用一整天的时间，以编程的方式去解决问题。当然，这将会持续数周的时间。然后，我才通过使用在二月份所得到的一个介绍资格，去正式应聘 Google（没错，是二月份时就得到的）。
-
-    感谢 JP 的这次介绍。
-
-## 跟着我的脚步
-
-目前我仍在该计划的执行过程中，如果你想跟随我脚步去学习的话，可以登进我在 [GoogleyAsHeck.com](https://googleyasheck.com/) 上所写的博客。
-
-下面是我的联系方式：
-
-- Twitter: [@googleyasheck](https://twitter.com/googleyasheck)
-- Twitter: [@StartupNextDoor](https://twitter.com/StartupNextDoor)
-- Google+: [+Googleyasheck](https://plus.google.com/+Googleyasheck)
-- LinkedIn: [johnawasham](https://www.linkedin.com/in/johnawasham)
-
-![John Washam - Google Interview University](https://dng5l3qzreal6.cloudfront.net/2016/Aug/book_stack_photo_resized_18_1469302751157-1472661280368.png)
-
-## 不要妄自菲薄
-
-- Google 的工程师都是才智过人的。但是，就算是工作在 Google 的他们，仍然会因为觉得自己不够聪明而感到一种不安。
-- [天才程序员的神话](https://www.youtube.com/watch?v=0SARbwvhupQ)
-
 ## 关于 Google
 
 - [ ] 面向学生 —— [Google 的职业生涯：技术开发指导](https://www.google.com/about/careers/students/guide-to-technical-development.html)
@@ -186,49 +97,7 @@
 
     很感谢您能帮我把网络公开课程的视频链接转换成公开的视频源，以代替那些在线课程的视频。此外，一些大学的讲座视频也是我所青睐的。
 
-## 面试过程 & 通用的面试准备
 
-- [ ] 视频：
-    - [ ] [如何在 Google 工作 —— 考生指导课程（视频）](https://www.youtube.com/watch?v=oWbUtlUhwa8&feature=youtu.be)
-    - [ ] [Google 招聘者所分享的技术面试小窍门（视频）](https://www.youtube.com/watch?v=qc1owf2-220&feature=youtu.be)
-    - [ ] [如何在 Google 工作：技术型简历的准备（视频）](https://www.youtube.com/watch?v=8npJLXkcmu8)
-
-- [ ] 文章：
-    - [ ] [三步成为 Googler](http://www.google.com/about/careers/lifeatgoogle/hiringprocess/)
-    - [ ] [得到在 Google 的工作机会](http://steve-yegge.blogspot.com/2008/03/get-that-job-at-google.html)
-        - 所有他所提及的事情都列在了下面
-    - [ ] _（早已过期）_ [如何得到 Google 的一份工作，面试题，应聘过程](http://dondodge.typepad.com/the_next_big_thing/2010/09/how-to-get-a-job-at-google-interview-questions-hiring-process.html)
-    - [ ] [手机设备屏幕的问题](http://sites.google.com/site/steveyegge2/five-essential-phone-screen-questions)
-
-- [ ] 附加的（虽然 Google 不建议，但我还是添加在此）：
-    - [ ] [ABC：永远都要去编程（Always Be Coding）](https://medium.com/always-be-coding/abc-always-be-coding-d5f8051afce2#.4heg8zvm4)
-    - [ ] [四步成为 Google 里一名没有学位的员工](https://medium.com/always-be-coding/four-steps-to-google-without-a-degree-8f381aa6bd5e#.asalo1vfx)
-    - [ ] [共享白板（Whiteboarding）](https://medium.com/@dpup/whiteboarding-4df873dbba2e#.hf6jn45g1)
-    - [ ] [Google 是如何看待应聘、管理和公司文化](http://www.kpcb.com/blog/lessons-learned-how-google-thinks-about-hiring-management-and-culture)
-    - [ ] [程序开发面试中有效的白板（Whiteboarding）](http://www.coderust.com/blog/2014/04/10/effective-whiteboarding-during-programming-interviews/)
-    - [ ] 震撼开发类面试 第一集：
-        - [ ] [Gayle L McDowell —— 震撼开发类面试（视频）](https://www.youtube.com/watch?v=rEJzOhC5ZtQ)
-        - [ ] [震撼开发类面试 —— 作者 Gayle Laakmann McDowell（视频）](https://www.youtube.com/watch?v=aClxtDcdpsQ)
-    - [ ] 如何在世界四强企业中获得一份工作：
-        - [ ] [“如何在世界四强企业中获得一份工作 —— Amazon、Facebook、Google 和 Microsoft”（视频）](https://www.youtube.com/watch?v=YJZCUhxNCv8)
-    - [ ] [面试 Google 失败](http://alexbowe.com/failing-at-google-interviews/)
-
-## 为你的面试选择一种语言
-
-在这，我就以下话题写一篇短文 —— [重点：为在 Google 的面试选择一种语言](https://googleyasheck.com/important-pick-one-language-for-the-google-interview/)
-
-在大多数公司的面试当中，你可以在编程这一环节，使用一种自己用起来较为舒适的语言去完成编程。但在 Google，你只有三种固定的选择：
-
-- C++
-- Java
-- Python
-
-有时你也可以使用下面两种，但需要事先查阅说明。因为，说明中会有警告：
-
-- JavaScript
-- Ruby
-
-你需要对你所选择的语言感到非常舒适且足够了解。
 
 更多关于语言选择的阅读：
 
@@ -792,7 +661,6 @@
         - [ ] 列出强连通分量
         - [ ] 检查双向图
 
-可以从 Skiena 的书（参考下面的书推荐小节）和面试书籍中学习更多关于图的实践。
 
 ## 更多知识
 
@@ -1123,10 +991,7 @@
 
 ---
 
-## 终面
 
-    这一部分有一些短视频，你可以快速的观看和复习大多数重要概念。
-    这对经常性的巩固很有帮助。
 
 #### 综述:
 
@@ -1216,53 +1081,6 @@
 - [InterviewCake](https://www.interviewcake.com/)
 - [InterviewBit](https://www.interviewbit.com/invite/icjf)
 
-- [模拟大公司的面试](http://www.gainlo.co/)
-
-## 当你临近面试时
-
-- [ ] 搞定代码面试 (videos):
-    - [Cracking The Code Interview](https://www.youtube.com/watch?v=4NIb9l3imAo)
-    - [Cracking the Coding Interview - 全栈系列](https://www.youtube.com/watch?v=Eg5-tdAwclo)
-    - [Ask Me Anything: Gayle Laakmann McDowell (Cracking the Coding Interview 的作者)](https://www.youtube.com/watch?v=1fqxMuPmGak)
-
-## 你的简历
-
-- [10 条小贴士让你写出一份还算不错的简历](http://steve-yegge.blogspot.co.uk/2007_09_01_archive.html)
-- 这是搞定面试的第一个关键步骤
-
-
-## 当面试来临的时候
-
-    随着下面列举的问题思考下你可能会遇到的 20 个面试问题
-    每个问题准备 2-3 种回答
-    准备点故事，不要只是摆一些你完成的事情的数据，相信我，人人都喜欢听故事
-
-- 你为什么想得到这份工作？
-- 你解决过的最有难度的问题是什么？
-- 面对过的最大挑战是什么?
-- 见过的最好或者最坏的设计是怎么样的?
-- 对某项 Google 产品提出改进建议。
-- 你作为一个个体同时也是团队的一员，如何达到最好的工作状态?
-- 你的什么技能或者经验是你的角色中不可或缺的?为什么？
-- 你在某份工作或某个项目中最享受的是什么?
-- 你在某份工作或某个项目中面临过的最大挑战是什么?
-- 你在某份工作或某个项目中遇到过的最蛋疼的 Bug 是什么样的？
-- 你在某份工作或某个项目中学到了什么？
-- 你在某份工作或某个项目中哪些地方还可以做的更好？
-
-## 问面试官的问题
-
-    我会问的一些：(可能我已经知道了答案但我想听听面试官的看法或者了解团队的前景):
-
-- 团队多大规模?
-- 开发周期是怎样的? 会使用瀑布流/极限编程/敏捷开发么?
-- 经常会为 deadline 加班么? 或者是有弹性的?
-- 团队里怎么做技术选型?
-- 每周平均开多少次会?
-- 你觉得工作环境有助于员工集中精力吗?
-- 目前正在做什么工作?
-- 喜欢这些事情吗?
-- 工作期限是怎么样的?
 
 ## 当你获得了梦想的职位
 
